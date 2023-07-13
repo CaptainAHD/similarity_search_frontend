@@ -2,6 +2,7 @@ import { Avatar, Spacer } from "@nextui-org/react";
 import { FC, useEffect, useRef } from "react";
 import { MessageGroup } from "@/types";
 import { Progress } from "@nextui-org/react";
+import Beautify from "./FormatMessage";
 
 interface ChatMessageProps {
     Messages: MessageGroup[];
@@ -27,7 +28,7 @@ const TextMessage:FC<ChatMessageProps> = ({ Messages }) => {
                                     <div className="flex-shrink-0 flex flex-col relative items-end">
                                         <Avatar radius="md" name="Bot" src={botImage} />
                                     </div>
-                                    {typeof message.message !== 'string' ? <> <Progress style={{width: '200px'}}  className="w-8" size="sm" isIndeterminate color="secondary"/> </> : <p>{message.message}</p>}
+                                    {typeof message.message === 'number' ? <> <Progress style={{width: '200px'}}  className="w-8" size="sm" isIndeterminate color="secondary"/> </> : <Beautify message={message.message}/>}
                                 </div>
                             </div>
                         ) : (

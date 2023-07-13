@@ -5,6 +5,15 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
 };
 
 export interface MessageGroup {
-  message: string | number,
+  message: string | BotResponse[] | number,
   user: string
+}
+
+export interface BotResponse {
+  Output : {
+    RelevanceScore : string,
+    FileName : string,
+    Facts : string,
+    CaseSummary : string
+  }
 }

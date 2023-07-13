@@ -5,6 +5,7 @@ import { Input } from "@nextui-org/input";
 import React, { useState } from "react";
 import { SendIcon } from "../icons";
 import axios from "axios";
+import { BotResponse } from "@/types";
 
 interface ChatInputProps {
     onSendMessage: (message: MessageGroup) => void;
@@ -19,43 +20,25 @@ const ChatInput: React.FC<ChatInputProps> = ({onSendMessage, MessageLength, Load
         setMessage(event.target.value);
     };
 
-    const FetchResponse = async (query: string) : Promise<string> => {
+    const FetchResponse = async (query: string) : Promise<BotResponse[]> => {
         try {
-            const response = await axios.post('https://legal-similarity-search.onrender.com/run', { message: query }, { headers: { 'Content-Type': 'application/json' } });
-            console.log(response)
-            return response.data;
+            const response = await axios.post('https://legal-similarity-search.onrender.com//run', { message: query }, { headers: { 'Content-Type': 'application/json' } });
+            return response.data ;
         } catch (error) {
             console.log(error);
             throw error;
         }
     }
 
-    function formatDataToString(data: any): string {
-        let result = '';
-        
-        for (const key in data) {
-          result += `Output ${key.substr(-1)}:\n\n`;
-          result += `  CaseSummary: ${data[key].CaseSummary}\n\n`;
-          result += `  Facts: ${data[key].Facts}\n\n`;
-          result += `  FileName: ${data[key].FileName}\n\n`;
-          result += `  RelevanceScore: ${data[key].RelevanceScore}\n\n\n`;
-        }
-
-        console.log(result);
-        return result;
-      }
-      
-    
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         if (message.trim() !== '') {
-            onSendMessage({message, user: 'human'});
+            onSendMessage({message : message as string, user: 'human'});
             setMessage('');
             Loading(true);
             FetchResponse(message).then((data)=>{
                 Loading(false);
-                const res = formatDataToString(data);
-                onSendMessage({message: res, user: 'bot'});
+                onSendMessage({message: data, user: 'bot'});
             }).catch((Error)=>alert(Error));
         }
     };
