@@ -23,6 +23,9 @@ dependencies:
   '@nextui-org/navbar':
     specifier: ^0.0.0-dev-v2-20230622022515
     version: 0.0.0-dev-v2-20230622022515(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+  '@nextui-org/react':
+    specifier: 0.0.0-dev-v2-20230713005129
+    version: 0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
   '@nextui-org/snippet':
     specifier: ^0.0.0-dev-v2-20230622022515
     version: 0.0.0-dev-v2-20230622022515(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
@@ -53,6 +56,9 @@ dependencies:
   autoprefixer:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.24)
+  axios:
+    specifier: ^1.4.0
+    version: 1.4.0
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
@@ -366,6 +372,33 @@ packages:
     dev: false
     optional: true
 
+  /@nextui-org/accordion@0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-2sQgDE4/ynW8ZBBjy5ymQliJD3pUARFxXoBRfkX2xqn+cBxQ3HP7Y1eBvrXUC+MN2a7y3DARLQUVzc2/HzFWCw==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/aria-utils': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/divider': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/framer-transitions': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-icons': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-aria-accordion-item': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/accordion': 3.0.0-alpha.19(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/tree': 3.7.0(react@18.2.0)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
   /@nextui-org/aria-utils@0.0.0-dev-v2-20230622022515(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-1Z+PEK5s0nfzvpN9UT0M0iKZ9LMEdtAuUZOmTuKzQGSWDxovy5eu/ElpgLDljNDMmPI2bhKtcOlHLAxe8rX8rw==}
     peerDependencies:
@@ -379,6 +412,55 @@ packages:
       react: 18.2.0
     transitivePeerDependencies:
       - react-dom
+    dev: false
+
+  /@nextui-org/aria-utils@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-mgp18RsKr+0/ayhwT/xq+UJzyRlqwemB47PZx1bs0l13A2WFse5KXdLwEXh9TKHdW3n9VBHWfuvMu/iEw8E4zQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/collections': 3.9.0(react@18.2.0)
+      '@react-types/overlays': 3.8.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
+  /@nextui-org/avatar@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-76uaBjm7WRCiskBEJTtGPLjeJfY4MjEAULX6HIj+rCaww3tTMYfMIt8cGObAf815j51ebLVCilz5IrUcydDVAQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-image': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/badge@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-uLkuEFEoqqaLMtevIpZOqXeOUtUQ+fTIyECaaC3J7lAuo8VFbeQGxI4n2cDU+2rJK5gzMKFusBX1ozK39j4m7A==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
     dev: false
 
   /@nextui-org/button@0.0.0-dev-v2-20230622022515(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
@@ -405,6 +487,98 @@ packages:
       - tailwindcss
     dev: false
 
+  /@nextui-org/button@0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-fi4gUwLX5SycMQDbVsig4hxyoUi7o3Vcrv5MlYpuRJ0vkvWFJC+Jsb0TeJFHqoFNycXtDqMh/oJu/+hgyi+A0A==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/ripple': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/spinner': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-aria-button': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/button': 3.8.0(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/button': 3.7.3(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - framer-motion
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/card@0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-yfQ90+6KqQEm2276PSImFR3u5rT8XkAP8mTPqIR4rnPilSoYkjQ4V700MjQvGo7h9mEvPmgc+AlS7z++Z6MLrA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/ripple': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-aria-button': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/button': 3.8.0(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - framer-motion
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/checkbox@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-qEn+imzRmfeKBiMaYCUQWc3o+aX5HzX4raI5AZ4TpuN0F4avMxGFvalqJdZduB+Q6RkCRIZGa4ltBO1SHMzqUQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/checkbox': 3.9.2(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-aria/visually-hidden': 3.8.2(react@18.2.0)
+      '@react-stately/checkbox': 3.4.3(react@18.2.0)
+      '@react-stately/toggle': 3.6.0(react@18.2.0)
+      '@react-types/checkbox': 3.4.4(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/chip@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-7BdoDyqJFEBjIp4rrImS/OZwOvlvXpLzvH9M+1pCWnUaSeX7nNWe8Yl1MNtFXPfDruYA2YURty09Ck+f2jH7/A==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-icons': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/checkbox': 3.4.4(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
   /@nextui-org/code@0.0.0-dev-v2-20230622022515(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
     resolution: {integrity: sha512-KQcif51zKUeY8tWlbbaASCrDo5EfvH0zCgdttWcCxmbxdHb+VaNSu2sTM95/5hwySmnPsj0KdgWVQs0fcDjP5w==}
     peerDependencies:
@@ -414,6 +588,38 @@ packages:
       '@nextui-org/shared-utils': 0.0.0-dev-v2-20230622022515(react@18.2.0)
       '@nextui-org/system': 0.0.0-dev-v2-20230622022515(react-dom@18.2.0)(react@18.2.0)
       '@nextui-org/theme': 0.0.0-dev-v2-20230622022515(tailwindcss@3.3.2)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/code@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-KfWJGK26kGWLdc/ZRTVEabyS6+i449NFjnAUo8l51v9BE0ag1wlF7PoqOpVB0zqgTy0yVFa4gIfaFOa/FuMOjw==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/divider@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-RHzXRBer84yfTjJHyNC2XXlMM9QOqoP/7YIuljX1kTGezXWLI67ojvQUmmLwBYY0BbSwGdKhG2jKGFDxhYD2kA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/separator': 3.3.3(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
       react: 18.2.0
     transitivePeerDependencies:
       - react-dom
@@ -434,6 +640,36 @@ packages:
       - tailwindcss
     dev: false
 
+  /@nextui-org/dropdown@0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-AR972jyWmPhDdkEUyIAC1SUJ9l8D0Ej36Qzw6n8vKDAGN3soujz2EgOuFHfhEdMx4BIQitPc6FM04si8Ss2Mwg==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/aria-utils': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/divider': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/popover': 0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-is-mobile': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/menu': 3.10.0(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/menu': 3.5.3(react@18.2.0)
+      '@react-stately/tree': 3.7.0(react@18.2.0)
+      '@react-types/menu': 3.9.2(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - react-dom
+      - tailwindcss
+    dev: false
+
   /@nextui-org/framer-transitions@0.0.0-dev-v2-20230622022515(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-CaSP5E1popOb6w5NZ5btIUjlssbKhg8YO6EZTb2bJmXlkjWddWIQiUElcWYY//DYKRGh0a7uLSMksWwKLlM+Vg==}
     peerDependencies:
@@ -446,6 +682,36 @@ packages:
       react: 18.2.0
     transitivePeerDependencies:
       - react-dom
+    dev: false
+
+  /@nextui-org/framer-transitions@0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-+hmXXEqyRE0R/2gjZj4GPcUiVQd6yOZdDf5J23NZhkAwirGsqIplIGikobDBm6CM6NhuE4OUVMbggt91qrzWYQ==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
+  /@nextui-org/image@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-t0lNv/KVsgNlZbfLGxudKg/XhvBHFIsff8S8+LJC63bVIecXySuHB7fHMrS0pzAY/Fd4E3sAKEX1UoJNmVY4og==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-image': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
     dev: false
 
   /@nextui-org/input@0.0.0-dev-v2-20230622022515(@types/react@18.2.8)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
@@ -461,6 +727,31 @@ packages:
       '@nextui-org/use-aria-field': 0.0.0-dev-v2-20230622022515(react@18.2.0)
       '@react-aria/focus': 3.13.0(react@18.2.0)
       '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/utils': 3.7.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@react-types/textfield': 3.7.2(react@18.2.0)
+      react: 18.2.0
+      react-textarea-autosize: 8.5.2(@types/react@18.2.8)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/react'
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/input@0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-r6BIVJdEsZQFnc9wQtvueooZ+Srrn8+e5fi/2zZOeqsjx1JwzPaItO0amuqq+TPiGK7fszvC2Xu7Lvj590tFAg==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-icons': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/textfield': 3.10.0(react@18.2.0)
       '@react-aria/utils': 3.18.0(react@18.2.0)
       '@react-stately/utils': 3.7.0(react@18.2.0)
       '@react-types/shared': 3.18.1(react@18.2.0)
@@ -489,6 +780,22 @@ packages:
       - tailwindcss
     dev: false
 
+  /@nextui-org/kbd@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-L7aVjeePL2EPJP/RyThrRb5pOuOD7DFr+QiAenuhPmo8vV6AqBE2IAGscKSrPpgfnDKnvYLsdSwFt8fRRG20TQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
   /@nextui-org/link@0.0.0-dev-v2-20230622022515(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
     resolution: {integrity: sha512-w44Iv3KImq6IZZAFxyfcLxfItV4tCmjWwaOoVtK7id4Z0kyWcvDfgI6U1hsF6Dy1H8d3LSrFRM7iJuCaJj9UNQ==}
     peerDependencies:
@@ -505,6 +812,57 @@ packages:
       '@react-types/link': 3.4.3(react@18.2.0)
       react: 18.2.0
     transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/link@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-FMHiUwz9xZzDsCTpWvugKaOJAHhHMnK3TbfPxvNRCk3tkvBm3giD0kg9FfGy4B8oN0gGTg4gAGgYkNXA7i2oYA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-icons': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/link': 3.5.2(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/link': 3.4.3(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/modal@0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-eKMPb8BaCPTs/scNvhcJSljrvxqg7RpjUSiniOdjfh4cxyFB4qa4NXIuKK6xNd0ZCkNGMkiv2tLL9PnAotU+UQ==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/framer-transitions': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-icons': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-aria-button': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/use-aria-modal-overlay': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/use-disclosure': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/dialog': 3.5.3(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/overlays': 3.15.0(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/overlays': 3.6.0(react@18.2.0)
+      '@react-types/overlays': 3.8.0(react@18.2.0)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-remove-scroll: 2.5.6(@types/react@18.2.8)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/react'
       - react-dom
       - tailwindcss
     dev: false
@@ -537,6 +895,129 @@ packages:
       - tailwindcss
     dev: false
 
+  /@nextui-org/navbar@0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-5gcpBPUk7L4YYehnHfWKyigjd/L9X32W9mVMVql506NlTZBTVOu+A6bxd3Vzp/1i2SlHXuV2oW+lsBGOtopZQA==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/framer-transitions': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-aria-toggle-button': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/use-scroll-position': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/overlays': 3.15.0(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/toggle': 3.6.0(react@18.2.0)
+      '@react-stately/utils': 3.7.0(react@18.2.0)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-remove-scroll: 2.5.6(@types/react@18.2.8)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/react'
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/pagination@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-gthb00H+Al10rc/me6zWCi1k5fpXjAyl/RE5u5gkNXD7XYlrhIuunU3KlORKEXSNFigPgQJfo27GKuK2pdVZFQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-icons': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-pagination': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      react: 18.2.0
+      scroll-into-view-if-needed: 3.0.10
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/popover@0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-XgfHSiB1IoFiNVfWzcYCqcrxCD7Ky+nlupp8fSE8ihYSfn4htf9JnbaNsbELyUCv8kWltBWM9tLz+Lmyiml5oQ==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/aria-utils': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/button': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/framer-transitions': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-aria-button': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/dialog': 3.5.3(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/overlays': 3.15.0(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/overlays': 3.6.0(react@18.2.0)
+      '@react-types/button': 3.7.3(react@18.2.0)
+      '@react-types/overlays': 3.8.0(react@18.2.0)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-remove-scroll: 2.5.6(@types/react@18.2.8)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/react'
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/progress@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-8Kfd1XX2x5QRmNOXWgOJqrgPbitI1GzgcYD22MWAT+AslJA1lWKfe3lD+NKji7eblENiaGKrDs2o9J/EdaZLgA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-is-mounted': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/i18n': 3.8.0(react@18.2.0)
+      '@react-aria/progress': 3.4.3(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/progress': 3.4.1(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/radio@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-VGtWVIc+StgNvRrPuI5TALAzjvxbrw/tm/+502O943p3kQzdpx1Csy6lZgUDbbcz40A+WXetGojuro10yqZ+lA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/radio': 3.6.2(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-aria/visually-hidden': 3.8.2(react@18.2.0)
+      '@react-stately/radio': 3.8.2(react@18.2.0)
+      '@react-types/radio': 3.4.2(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
   /@nextui-org/react-utils@0.0.0-dev-v2-20230622022515(react@18.2.0):
     resolution: {integrity: sha512-kmCurPxju2OCZrjoU3Jj1a5lwkmppaDxnuph0SARNeov7rVMnYFDlJwaOwMQScIMDD0RtTcDG5CjTjTUG38ogQ==}
     peerDependencies:
@@ -546,8 +1027,88 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@nextui-org/react-utils@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-NnNHcupS6KZAS3+qg0y8uF/9BF33FJ9/q3jtp8WNcbg9b3tiUW1LlO/30c+rRkTDzto0sQ8pzjFqC3SJthvUkg==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/react@0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-EO4KzN2xHspSffj+3qzucJuZ4Mk+3TJZaexieFp8FsrMbwy9GlVpADb0ZjCoVvUnyb3BN2nJTLkNEWT1K3tPVw==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/accordion': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/avatar': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/badge': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/button': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/card': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/checkbox': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/chip': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/code': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/divider': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/dropdown': 0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/image': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/input': 0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/kbd': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/link': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/modal': 0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/navbar': 0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/pagination': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/popover': 0.0.0-dev-v2-20230713005129(@types/react@18.2.8)(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/progress': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/radio': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/skeleton': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/snippet': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/spacer': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/spinner': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/switch': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/table': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/tabs': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/tooltip': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/user': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@react-aria/visually-hidden': 3.8.2(react@18.2.0)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/ripple@0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-3DFuebOryj/ep9VtE5HzppD2CCpysFGq3WTgaBV7wVBuvzD0v73KaVC6LMY5QxckLisvLuhGrJIzDDOJZ89xHw==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
   /@nextui-org/shared-icons@0.0.0-dev-v2-20230622022515(react@18.2.0):
     resolution: {integrity: sha512-tg53kIVdamaP/S2VpZ8UwWPTHBdFTbFMosAjY//AofFJHj/oJjMqiC2CkiE8Hev8xNqTuFHTFbPCqo1W6UV+bQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/shared-icons@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-4h9jQGdbSL55jXv1AHXty7wGRXrb/tBb2CzQniqT/qCDgv+blWMebYZDmOxKdlTJXEa1ugRCnR0pnuuyHaa3oQ==}
     peerDependencies:
       react: '>=18'
     dependencies:
@@ -560,6 +1121,29 @@ packages:
       react: '>=18'
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /@nextui-org/shared-utils@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-CtyqvTII6CUrVvUH/rG0v2Sa1YDsx2avG77aZgzd2YF1W/xDiEIKsLYPWzUkU3c3g+Clk5/llsozriLNI4dz7Q==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/skeleton@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-zlfcj6pQI6SAFX5OyAMkdAJxeNC78Bl4IH/XP5NVjyLq8rpCbeZ6blJcWJZu8BaPiFMHmOJa17gq3U7FZF94IA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
     dev: false
 
   /@nextui-org/snippet@0.0.0-dev-v2-20230622022515(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
@@ -585,6 +1169,44 @@ packages:
       - tailwindcss
     dev: false
 
+  /@nextui-org/snippet@0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-3bezAqndoPDNMTZTKd6FJLAxeYMq/8m1Gnzgr8TTIsXL5aFq002xpAiA7WrIAkLiPsU6wtUSAmH2+T+r+cFW8w==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/button': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-icons': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/tooltip': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/use-clipboard': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/spacer@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-ED0203ilKfbOIzuvMJlnh6OXaTVKdLbAZOnsafYSMTRMCk8LxZ3liC/IPgaVytHOhDHcOOiBHoMLq96HRlLWKw==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
   /@nextui-org/spinner@0.0.0-dev-v2-20230622022515(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
     resolution: {integrity: sha512-C26zle7eB00L0rmk22cexEN+JYbA24Cv6doFNP/n9BCyP0mF8fJrm+NNaoG+yjeB+tRqFD5Xtf7x/lQ0chFI8w==}
     peerDependencies:
@@ -594,6 +1216,21 @@ packages:
       '@nextui-org/shared-utils': 0.0.0-dev-v2-20230622022515(react@18.2.0)
       '@nextui-org/system': 0.0.0-dev-v2-20230622022515(react-dom@18.2.0)(react@18.2.0)
       '@nextui-org/theme': 0.0.0-dev-v2-20230622022515(tailwindcss@3.3.2)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/spinner@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-5A4zUVBfkF4HNS9pGVwP2djK3MtmkFhDsdhqn6Q7zqZcFgHxKzS2j2F1fITpoadK5LjRC1SN56EZyThShFneSg==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
       react: 18.2.0
     transitivePeerDependencies:
       - react-dom
@@ -622,6 +1259,28 @@ packages:
       - tailwindcss
     dev: false
 
+  /@nextui-org/switch@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-cSHaxA27r3A6e+LTlYVepCpZLu6/aj4XL5XsoPpq9kns41AY4kTqX+GNpM1p1cwbZ821fHvk89hRJEh4oSokMQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/switch': 3.5.2(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-aria/visually-hidden': 3.8.2(react@18.2.0)
+      '@react-stately/toggle': 3.6.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
   /@nextui-org/system@0.0.0-dev-v2-20230622022515(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-VMAZLBpwu5ewbKun8D3oPSVECXeRelP1SIU4lFemuAukTF0dwGWyu+Zy7HuMA3cf4VfRzPHSEkoYVdpaWdhJwQ==}
     peerDependencies:
@@ -633,6 +1292,74 @@ packages:
       react: 18.2.0
     transitivePeerDependencies:
       - react-dom
+    dev: false
+
+  /@nextui-org/system@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-OInfz7S1wVLAFwr0wIC3tKb6K/RZC+4EsZTt+UQcr5kJPCSjjqedqAgsqjy2CxrkenV2plhCfGokfOQApqzaCg==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@react-aria/i18n': 3.8.0(react@18.2.0)
+      '@react-aria/overlays': 3.15.0(react-dom@18.2.0)(react@18.2.0)
+      clsx: 1.2.1
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
+  /@nextui-org/table@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-5kYdnArtX2OsXmARIGNY7tEcIwang0pU9u+zkwqsfv9YdM3OVPMap+Y9hy+jra7ZCXL2RbvpHFx0gOE7WMhllg==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/checkbox': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-icons': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/spacer': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/table': 3.10.0(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-aria/visually-hidden': 3.8.2(react@18.2.0)
+      '@react-stately/table': 3.10.0(react@18.2.0)
+      '@react-types/grid': 3.1.8(react@18.2.0)
+      '@react-types/table': 3.7.0(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/tabs@0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-oosnkUNBqHLhW7YRAp6C8IOwWaEmXp1e2wlAEyXcUCnscGnQ1sJwQSCUyo13eeEYn/twFKku97DlQ45xRvnfBw==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/aria-utils': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/framer-transitions': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@nextui-org/use-is-mounted': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/use-update-effect': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/tabs': 3.6.1(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/tabs': 3.5.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@react-types/tabs': 3.3.0(react@18.2.0)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      scroll-into-view-if-needed: 3.0.10
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
     dev: false
 
   /@nextui-org/theme@0.0.0-dev-v2-20230622022515(tailwindcss@3.3.2):
@@ -648,6 +1375,24 @@ packages:
       lodash.foreach: 4.5.0
       lodash.get: 4.4.2
       lodash.isempty: 4.4.0
+      lodash.omit: 4.5.0
+      tailwind-variants: 0.1.13(tailwindcss@3.3.2)
+      tailwindcss: 3.3.2
+    dev: false
+
+  /@nextui-org/theme@0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-AzjhCfYLPIClw2E7bvd9WlTcJq+t7GGEt3LjX7UlBI8mPx670aS4v1fdnfUTyVSThKo5k2r+sukM0eFofwMTMA==}
+    peerDependencies:
+      tailwindcss: '*'
+    dependencies:
+      color: 4.2.3
+      color2k: 2.0.2
+      deepmerge: 4.3.1
+      flat: 5.0.2
+      lodash.foreach: 4.5.0
+      lodash.get: 4.4.2
+      lodash.kebabcase: 4.1.1
+      lodash.mapkeys: 4.6.0
       lodash.omit: 4.5.0
       tailwind-variants: 0.1.13(tailwindcss@3.3.2)
       tailwindcss: 3.3.2
@@ -679,8 +1424,59 @@ packages:
       - tailwindcss
     dev: false
 
+  /@nextui-org/tooltip@0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-HtcY8B9CoT0nSye6eb37/YrMEh/EICF20mZ3MgpMK1nSZk1rGb+Ix/ek+GhrrHMrxucGbkJQbqQEp4BPNjgrgw==}
+    peerDependencies:
+      framer-motion: '>=4.0.0'
+      react: '>=18'
+    dependencies:
+      '@nextui-org/aria-utils': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/framer-transitions': 0.0.0-dev-v2-20230713005129(framer-motion@10.12.16)(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/overlays': 3.15.0(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/tooltip': 3.6.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/tooltip': 3.4.2(react@18.2.0)
+      '@react-types/overlays': 3.8.0(react@18.2.0)
+      '@react-types/tooltip': 3.4.2(react@18.2.0)
+      framer-motion: 10.12.16(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/use-aria-accordion-item@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-7FnM0IImO0xZAwTf8ym1zXCGFqUB/j/fTUUWFoyWfTxteq7/JNNE26dklHw8ecJLkI2LDKGC+Wq29m9L9bPfqA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@react-aria/button': 3.8.0(react@18.2.0)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-stately/tree': 3.7.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
   /@nextui-org/use-aria-button@0.0.0-dev-v2-20230622022515(react@18.2.0):
     resolution: {integrity: sha512-P3ALh7xcEXLpW7lSunfS0iEQH4PFFzSAzUH7ZkN7f3XvR793VQk3ikM9uxGPuqDXZlmMrcRpw/itRqWsSgtHZA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/button': 3.7.3(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-aria-button@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-8uZbrJshUhkucIZOpyHWBlstRDFxRGJBhdxTEZdLkNKR2gK918z5Qrog1omSqaBINbRph0rOO9nhzQsZRX0/4Q==}
     peerDependencies:
       react: '>=18'
     dependencies:
@@ -714,6 +1510,20 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@nextui-org/use-aria-modal-overlay@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-1bou+0NeLflXBPbcz5jaWcWIVf3laDs8VbJ1XObjtB03JMjwUX3UmM+UCt+LJRuREvHJP2XbeUG3NQYODYaPuQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@react-aria/overlays': 3.15.0(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/overlays': 3.6.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
   /@nextui-org/use-aria-slot-id@0.0.0-dev-v2-20230622022515(react@18.2.0):
     resolution: {integrity: sha512-albigx8HesCCCSfX5j6KXk+nIZT+BGmQbeZkGqjQBcY/xM36Jp0Hc1HOf7ViwjiIveVhteEJMwiXprDYwane7w==}
     peerDependencies:
@@ -736,8 +1546,94 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@nextui-org/use-aria-toggle-button@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-VwPblfbZkUqb8ZiwJNgARQx9v0O3ha3mYSologYGTAR6JIX1KxxeHZU/yc5amIDm3tsg4ukCqMwom2IWpF7+UA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/use-aria-button': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/toggle': 3.6.0(react@18.2.0)
+      '@react-types/button': 3.7.3(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-callback-ref@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-apwT14RyzlN3c+r3jC/2m/y2xCTDAXiuZOZpDb/Zx4JSFnTX0paFg/0bBeh+ImVylei4Sx7peF7zq1c2h0KANg==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/use-safe-layout-effect': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
   /@nextui-org/use-clipboard@0.0.0-dev-v2-20230622022515(react@18.2.0):
     resolution: {integrity: sha512-CnRU8eExfZUknmj3MuMdZBg5U3Cf0DJLdam9chvHd2ypmJUqX5e2Spyy02s/6+hBEyWus34Q+EfemJHb1QZ15Q==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-clipboard@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-rprVQrx5iqQr+6aHDOzw1b+rsymLAb02ftD0L+4JlO3XefmosyBWZDp1OspADlCzQ8VgvjLdGKXv/iSpsjW7EQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-disclosure@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-zX8m1L91kgiOio9n76SzzKBjFHDcHhcBO2tqmBIpSCbo3WbU3chZvSxiGhPgyEObFEhEkG8Qc47FLh8SyQQNBQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/use-callback-ref': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/utils': 3.7.0(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-image@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-QGNvoPUckT1rcY5LxJtJfGIHoQLSNK/aCtE35z0UEq2ZSVBv62CqGxDv/JPSs8fcbJu7Upz1Hf5C9pMlT+Ku2Q==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/use-safe-layout-effect': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-is-mobile@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-lmHKdpEJXaUIM178h5jUpbrLvYoZpt3SnoYtScPKyqpbf6DAvv3SjEHeylUlkIAdKz4rVmPFcQr5rEYyKmk0WA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@react-aria/ssr': 3.7.0(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-is-mounted@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-EJywv2cULBhBHsIYi5gFS1lDByazZgN0MreYITV4G1ZIkRw716lTQWHift2FSg/2lU3fBXGZEuCzDt2F9BBaUQ==}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@nextui-org/use-pagination@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-tKdGfo0O/EfuJkqpR9cohCHSBUGuIQYsTSajirr8dV3UHoK1dxHWuEJp9T65YOkyuaTxLRQaZMUhFBe3toFVQQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-safe-layout-effect@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-l0jJT1Hl6BCPzCKY7GG8WTEEwOaFKdVF5ecbHTt2vyTafIaTqKXyysgsE+nH0JEchVU/REK7nw7jh7F09SiJCA==}
     peerDependencies:
       react: '>=18'
     dependencies:
@@ -750,6 +1646,40 @@ packages:
       react: '>=18'
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-scroll-position@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-CLzJ0IUilqFNzh4UniOZmDUdyNn6YlvpFV4qCjFp1t7SVJ3joFElhf/CEUP14GBZbgeLQsFNAHI6YKDcJH8+Qw==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-update-effect@0.0.0-dev-v2-20230713005129(react@18.2.0):
+    resolution: {integrity: sha512-pUxcNgVCuKvSQqgh8QBvGI64O2GWF0voLVCrIVwTLG1qpRiqdBg+ElBksiwLMvQy8aD/hOz9SoG2oi9EJjG1HQ==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@nextui-org/user@0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-qhCx4XayGU6s7xUoqcyAJgfqKn1nC/uGcdQhuMmC+XmBCPkgl2rC/zlQwEy+UTPnxBmDCaURA6llSSdkXycIjw==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/avatar': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      '@nextui-org/react-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/shared-utils': 0.0.0-dev-v2-20230713005129(react@18.2.0)
+      '@nextui-org/system': 0.0.0-dev-v2-20230713005129(react-dom@18.2.0)(react@18.2.0)
+      '@nextui-org/theme': 0.0.0-dev-v2-20230713005129(tailwindcss@3.3.2)
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -785,6 +1715,23 @@ packages:
       tslib: 2.6.0
     dev: false
 
+  /@react-aria/accordion@3.0.0-alpha.19(react@18.2.0):
+    resolution: {integrity: sha512-eQqqfv/+4iCx5krxU85SSadq1l5SMDjEf33+6ccpqX7okFI79cKfrK9aD4ilN7OIO8dn+BmuNZEg51OgUBVPFg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/button': 3.8.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/selection': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/tree': 3.7.0(react@18.2.0)
+      '@react-types/accordion': 3.0.0-alpha.14(react@18.2.0)
+      '@react-types/button': 3.7.3(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
   /@react-aria/button@3.8.0(react@18.2.0):
     resolution: {integrity: sha512-QdvXTQgn+QEWOHoMbUIPXSBIN5P2r1zthRvqDJMTCzuT0I6LbNAq7RoojEbRrcn0DbTa/nZPzOOYsZXjgteRdw==}
     peerDependencies:
@@ -800,6 +1747,39 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@react-aria/checkbox@3.9.2(react@18.2.0):
+    resolution: {integrity: sha512-gpvC+EnrxcQ9wupnoXsIDUmhSeBpxWtfRIYYypn6Ta6NY9Ubkh4H/8xE9/27nhJltHf5rzEcLfKg4QlEftab/w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/label': 3.6.0(react@18.2.0)
+      '@react-aria/toggle': 3.6.2(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/checkbox': 3.4.3(react@18.2.0)
+      '@react-stately/toggle': 3.6.0(react@18.2.0)
+      '@react-types/checkbox': 3.4.4(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-aria/dialog@3.5.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-wXpAqnt6TtR4X/5Xk5HCTBM0qyPcF2bXFQ5z2gSwl1olgoQ5znZEgMqMLbMmwb4dsWGGtAueULs6fVZk766ygA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/overlays': 3.15.0(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/overlays': 3.6.0(react@18.2.0)
+      '@react-types/dialog': 3.5.3(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
   /@react-aria/focus@3.13.0(react@18.2.0):
     resolution: {integrity: sha512-9DW7RqgbFWiImZmkmTIJGe9LrQBqEeLYwlKY+F1FTVXerIPiCCQ3JO3ESEa4lFMmkaHoueFLUrq2jkYjRNqoTw==}
     peerDependencies:
@@ -811,6 +1791,30 @@ packages:
       '@swc/helpers': 0.5.1
       clsx: 1.2.1
       react: 18.2.0
+    dev: false
+
+  /@react-aria/grid@3.8.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-7z1xFAbLPgUPROrXwuJk94STQPQ/K8rCLshhwTAg70uFVCPNnrm3jxQ6vE/lddPB+yss9Ee33GwSCrEXdzJkTw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/i18n': 3.8.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/live-announcer': 3.3.1
+      '@react-aria/selection': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/collections': 3.9.0(react@18.2.0)
+      '@react-stately/grid': 3.7.0(react@18.2.0)
+      '@react-stately/selection': 3.13.2(react@18.2.0)
+      '@react-stately/virtualizer': 3.6.0(react@18.2.0)
+      '@react-types/checkbox': 3.4.4(react@18.2.0)
+      '@react-types/grid': 3.1.8(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@react-aria/i18n@3.8.0(react@18.2.0):
@@ -841,6 +1845,18 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@react-aria/label@3.6.0(react@18.2.0):
+    resolution: {integrity: sha512-o6Z9YAbvywj/b995HOl7fS9vf8FVmhWiJkKwFyCi/M1A7FXBqgtPcdPDNHaaKOhvQcwnLs4iMVMJwZdn/dLVDA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/label': 3.7.4(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
   /@react-aria/link@3.5.2(react@18.2.0):
     resolution: {integrity: sha512-CCFP11Uietro6TUZpWBoq3Ql/6qss/ODC5XM6oNxckj72IHruFIj8V7Y0tL5x0aE6h38hlKcDf8NCxkQqz2edg==}
     peerDependencies:
@@ -853,6 +1869,35 @@ packages:
       '@react-types/shared': 3.18.1(react@18.2.0)
       '@swc/helpers': 0.5.1
       react: 18.2.0
+    dev: false
+
+  /@react-aria/live-announcer@3.3.1:
+    resolution: {integrity: sha512-hsc77U7S16trM86d+peqJCOCQ7/smO1cybgdpOuzXyiwcHQw8RQ4GrXrS37P4Ux/44E9nMZkOwATQRT2aK8+Ew==}
+    dependencies:
+      '@swc/helpers': 0.5.1
+    dev: false
+
+  /@react-aria/menu@3.10.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-zOOOXvx21aGSxZsXvLa3NV48hLk0jBC/zu5WZHT0Mo/wAe0+43f8p/U3AT8Gc4WnxYbIestcdLaIwgeagSoLtQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/i18n': 3.8.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/overlays': 3.15.0(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/selection': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/collections': 3.9.0(react@18.2.0)
+      '@react-stately/menu': 3.5.3(react@18.2.0)
+      '@react-stately/tree': 3.7.0(react@18.2.0)
+      '@react-types/button': 3.7.3(react@18.2.0)
+      '@react-types/menu': 3.9.2(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@react-aria/overlays@3.15.0(react-dom@18.2.0)(react@18.2.0):
@@ -874,6 +1919,64 @@ packages:
       '@swc/helpers': 0.5.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@react-aria/progress@3.4.3(react@18.2.0):
+    resolution: {integrity: sha512-u8aUrnnQGsRZWx5vBfBhf70TeGeN/gEJzcthef5YDUQZG8O2IDhzR1GLqBmn1RvdcSDvBdhRSpMXd+6bL1WzGw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/i18n': 3.8.0(react@18.2.0)
+      '@react-aria/label': 3.6.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/progress': 3.4.1(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-aria/radio@3.6.2(react@18.2.0):
+    resolution: {integrity: sha512-R7vyh0G2HaUe0+SGa/LDMYuGnNC/15L6yfuljpP8ZUDPw9bR/6BuE1BDCI0ov1EXQ1lQ/vcvZMbf78OC72vPrg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/i18n': 3.8.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/label': 3.6.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/radio': 3.8.2(react@18.2.0)
+      '@react-types/radio': 3.4.2(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-aria/selection@3.16.0(react@18.2.0):
+    resolution: {integrity: sha512-qQ4X0+wtLz0+qjsoj1T0hVehA0CbZdu0Ax+lCzWmj+ZDivtdeNpVQl+K0yj9p95MnzLgIbnY7zU2zDQrYqKDOQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/i18n': 3.8.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/collections': 3.9.0(react@18.2.0)
+      '@react-stately/selection': 3.13.2(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-aria/separator@3.3.3(react@18.2.0):
+    resolution: {integrity: sha512-kBGEXSSUiJLPS9foS5/7jgzpdp3/Yb1aMvVuvRGuNxDUsPAmvaYUT3qZ44Zf3hoxKfRFb4452KcoZ03w3Jfcvg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
     dev: false
 
   /@react-aria/ssr@3.6.0(react@18.2.0):
@@ -902,6 +2005,64 @@ packages:
       '@react-aria/toggle': 3.6.2(react@18.2.0)
       '@react-stately/toggle': 3.6.0(react@18.2.0)
       '@react-types/switch': 3.3.2(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-aria/table@3.10.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-N42Ill9fdjeWKC/516fPMpPa79B0c+teFJ/fhcROLFrlwotgLKwndIG/InkE1L6FKeiJ8JL33FgUnxfRGafa8Q==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/grid': 3.8.0(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/i18n': 3.8.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/live-announcer': 3.3.1
+      '@react-aria/selection': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-aria/visually-hidden': 3.8.2(react@18.2.0)
+      '@react-stately/collections': 3.9.0(react@18.2.0)
+      '@react-stately/table': 3.10.0(react@18.2.0)
+      '@react-stately/virtualizer': 3.6.0(react@18.2.0)
+      '@react-types/checkbox': 3.4.4(react@18.2.0)
+      '@react-types/grid': 3.1.8(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@react-types/table': 3.7.0(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@react-aria/tabs@3.6.1(react@18.2.0):
+    resolution: {integrity: sha512-P/P3HA+b1Q917hVvXn1kzFl3dQnMTwYR8JKY5gjfjLQsAAEfJzSO3wLR0vNSp6Cz2FTAVCH4yzwP1G+bRLZVnw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/i18n': 3.8.0(react@18.2.0)
+      '@react-aria/interactions': 3.16.0(react@18.2.0)
+      '@react-aria/selection': 3.16.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-stately/list': 3.9.0(react@18.2.0)
+      '@react-stately/tabs': 3.5.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@react-types/tabs': 3.3.0(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-aria/textfield@3.10.0(react@18.2.0):
+    resolution: {integrity: sha512-TYFgDTlxrljakD0TGOkoSCvot9BfVCZSrTKy3+/PICSTkPIzXThLIQmpX6yObLMXQSNW6SvBCl6CMetJMJHcbw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/focus': 3.13.0(react@18.2.0)
+      '@react-aria/label': 3.6.0(react@18.2.0)
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@react-types/textfield': 3.7.2(react@18.2.0)
       '@swc/helpers': 0.5.1
       react: 18.2.0
     dev: false
@@ -976,11 +2137,63 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@react-stately/checkbox@3.4.3(react@18.2.0):
+    resolution: {integrity: sha512-TEd50vrUTHZWt8qO7ySLG2MlWJbsCvyx+pA1VhLJw6hRfjqorAjmCcpV2sEdu3EkLG7hA/Jw+7iBmGPlxmBN6A==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-stately/toggle': 3.6.0(react@18.2.0)
+      '@react-stately/utils': 3.7.0(react@18.2.0)
+      '@react-types/checkbox': 3.4.4(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
   /@react-stately/collections@3.9.0(react@18.2.0):
     resolution: {integrity: sha512-CBpXSKmCpbIFpIToVFlzo2R1/Cj+dcU8gWw2KfPyyJX+2wHKkDIvtK01EAytDLX/vkE8O+fD5a7qMZ3pf8gpeA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-stately/grid@3.7.0(react@18.2.0):
+    resolution: {integrity: sha512-3eb7+7p9Xh/+luUOyieY2bM4CsARA8WnRB7c2++gh4dh9AEpZV4VGICGTe35+dJYr+9pbYQqVMEcEFUOaJJzZw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-stately/collections': 3.9.0(react@18.2.0)
+      '@react-stately/selection': 3.13.2(react@18.2.0)
+      '@react-types/grid': 3.1.8(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-stately/list@3.9.0(react@18.2.0):
+    resolution: {integrity: sha512-9DNV02zFEkJG38AtHyhvGMfpJQGwV0KMyMObs+KEujzCh+rmHdTu1rWdjzLw1ve+ecESK8UMsF4Kt6wwO0Qi6g==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-stately/collections': 3.9.0(react@18.2.0)
+      '@react-stately/selection': 3.13.2(react@18.2.0)
+      '@react-stately/utils': 3.7.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-stately/menu@3.5.3(react@18.2.0):
+    resolution: {integrity: sha512-RFgwVD/4BgTtJkexi1WaHpAEkQWZPvpyri0LQUgXWVqBf9PpjB8wigF3XBLMDNkL+YXE0QtzQZBNS1nJECf7rg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-stately/overlays': 3.6.0(react@18.2.0)
+      '@react-stately/utils': 3.7.0(react@18.2.0)
+      '@react-types/menu': 3.9.2(react@18.2.0)
       '@react-types/shared': 3.18.1(react@18.2.0)
       '@swc/helpers': 0.5.1
       react: 18.2.0
@@ -993,6 +2206,58 @@ packages:
     dependencies:
       '@react-stately/utils': 3.7.0(react@18.2.0)
       '@react-types/overlays': 3.8.0(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-stately/radio@3.8.2(react@18.2.0):
+    resolution: {integrity: sha512-tjlXask1IEGzzXwdc495K+wsHhyVhtaMhAeTbrdTD1a1fdg2g/jA0vWhN/KGO/CpnZT4vXGjJcY686Rmlrt9EQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-stately/utils': 3.7.0(react@18.2.0)
+      '@react-types/radio': 3.4.2(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-stately/selection@3.13.2(react@18.2.0):
+    resolution: {integrity: sha512-rVnseneG9XWuS0+JEsa0EhRfTZsupm9JiEuZHZ19YeLewjVdFpjgBMDZb8ZYoyilNXVjyUwaoq94FsOXotsg9w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-stately/collections': 3.9.0(react@18.2.0)
+      '@react-stately/utils': 3.7.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-stately/table@3.10.0(react@18.2.0):
+    resolution: {integrity: sha512-LDF97lZIkCDYNFw5Yz1eREedO9QerPDchxXUXlPVyjwLiZ4ADlhz6W/NTq6gm2PgrHljY/0+Kd5zEgVySLMTEw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-stately/collections': 3.9.0(react@18.2.0)
+      '@react-stately/grid': 3.7.0(react@18.2.0)
+      '@react-stately/selection': 3.13.2(react@18.2.0)
+      '@react-types/grid': 3.1.8(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@react-types/table': 3.7.0(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-stately/tabs@3.5.0(react@18.2.0):
+    resolution: {integrity: sha512-N6B0+ZyW6mbmY/kHl0GKGj/i7MtA141A7yYJFSLDdvq1Hb2x7V1Y6gfl40FkSW4W9y3oQtKU+rTxV0EyjEJMWQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-stately/list': 3.9.0(react@18.2.0)
+      '@react-stately/utils': 3.7.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@react-types/tabs': 3.3.0(react@18.2.0)
       '@swc/helpers': 0.5.1
       react: 18.2.0
     dev: false
@@ -1021,12 +2286,45 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@react-stately/tree@3.7.0(react@18.2.0):
+    resolution: {integrity: sha512-oXOjJwy/o3XSJyBkudiEvnjWzto2jy48kmGjHCJ+B7Hv+WcbN9o7iAaHv11lOqMXRSpuF9gqox4ZZCASG+smIQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-stately/collections': 3.9.0(react@18.2.0)
+      '@react-stately/selection': 3.13.2(react@18.2.0)
+      '@react-stately/utils': 3.7.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
   /@react-stately/utils@3.7.0(react@18.2.0):
     resolution: {integrity: sha512-VbApRiUV2rhozOfk0Qj9xt0qjVbQfLTgAzXLdrfeZSBnyIgo1bFRnjDpnDZKZUUCeGQcJJI03I9niaUtY+kwJQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
       '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-stately/virtualizer@3.6.0(react@18.2.0):
+    resolution: {integrity: sha512-f78BQT9ZSD5Hpqf6axRoNQJFqV+JjMSV2VixMfhIAcqi/fn8rEN2j3g4SPdFzTtFf2FR3+AKdBFu5tsgtk1Tgw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/utils': 3.18.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
+  /@react-types/accordion@3.0.0-alpha.14(react@18.2.0):
+    resolution: {integrity: sha512-GWrhzedjCkZ4Rcp9hcLhdv5oVWN6tI45uwv/IfWUVTrEPzFWpPYUfBReVPlyVWY0aI7ppDDEIeg03wCe6notnA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/shared': 3.18.1(react@18.2.0)
       react: 18.2.0
     dev: false
 
@@ -1048,6 +2346,34 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@react-types/dialog@3.5.3(react@18.2.0):
+    resolution: {integrity: sha512-iTdg+UZiJpJe7Rnu9eILf8Hcd9li0Kg2eg8ba8dIc1O++ymqPmrdPWj9wj1JB9cl94E2Yg4w3W5YINiLXkdoeA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/overlays': 3.8.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@react-types/grid@3.1.8(react@18.2.0):
+    resolution: {integrity: sha512-NKk4pDbW2QXJOYnDSAYhta81CGwXOc/9tVw2WFs+1wacvxeKmh1Q+n36uAFcIdQOvVRqeGTJaYiqLFmF3fC3tA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@react-types/label@3.7.4(react@18.2.0):
+    resolution: {integrity: sha512-SfTqPRI39GE3GFD5ZGYEeX9jXQrNqDeaaI36PJhnbgGVFz96oVVkhy9t9c2bMHcbhLLENYIHMzxrvVqXS07e7A==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
   /@react-types/link@3.4.3(react@18.2.0):
     resolution: {integrity: sha512-opKfkcaeV0cir64jPcy7DS0BrmdfuWMjua+MSeNv7FfT/b65rFgPfAOKZcvLWDsaxT5HYb7pivYPBfjKqHsQKw==}
     peerDependencies:
@@ -1058,8 +2384,36 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@react-types/menu@3.9.2(react@18.2.0):
+    resolution: {integrity: sha512-OIuEOGqo8gHaP4k3Ua+RvuPN2/3Sgcl30dNFIGaK7hra4eWxOUu8TTC+/Quy6xozR/SvFhqCLCoMKixy6MblWQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/overlays': 3.8.0(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
   /@react-types/overlays@3.8.0(react@18.2.0):
     resolution: {integrity: sha512-0JxwUW3xwXjsT+nVI5dVE1KUm8QKxnQj9vjqgsazX213+klRd/QdeuFJgcbxzCVFOS/mLkP4o/ATjxt4+1eQsA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@react-types/progress@3.4.1(react@18.2.0):
+    resolution: {integrity: sha512-Y6cTvvJjbfFBeB7Zb3PizhhO3+YLWXpIP8opto15RWu11ktgZVMUgsnlsJgE3dFeoZ7UHwXdCYf8JOzBw5VPHA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@react-types/radio@3.4.2(react@18.2.0):
+    resolution: {integrity: sha512-SE6sjZjZbyuJMJNNdlhoutVr+QFRt1Vz7DZj4UaOswW5SD/Xb+xFdW8i6ETKdRN17am/5SC89ltWe0R3q0pVkA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
@@ -1081,6 +2435,25 @@ packages:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
       '@react-types/checkbox': 3.4.4(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@react-types/table@3.7.0(react@18.2.0):
+    resolution: {integrity: sha512-tUSJPdU2eNjH/CRHs5pOCKDyQxzq8b1rJZHldvRK/GCW+B98debFOueYgw4+YGQ1E33IyzAwid+FXgY3wlZlHg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/grid': 3.1.8(react@18.2.0)
+      '@react-types/shared': 3.18.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@react-types/tabs@3.3.0(react@18.2.0):
+    resolution: {integrity: sha512-uXDVXBBppb+9S8bhxF7LZhgptrF5ll25SX8/jrpnXOR0jpihq6K3fkSe5M/OBnGsybuyVGN7+Np5v7UUYrM5SQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
       '@react-types/shared': 3.18.1(react@18.2.0)
       react: 18.2.0
     dev: false
@@ -1340,6 +2713,10 @@ packages:
     resolution: {integrity: sha512-eBvWn1lvIApYMhzQMsu9ciLfkBY499mFZlNqG+/9WR7PVlroQw0vG30cOQQbaKz3sCEc44TAOu2ykzqXSNnwag==}
     dev: false
 
+  /asynckit@0.4.0:
+    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
+    dev: false
+
   /autoprefixer@10.4.14(postcss@8.4.24):
     resolution: {integrity: sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==}
     engines: {node: ^10 || ^12 || >=14}
@@ -1364,6 +2741,16 @@ packages:
   /axe-core@4.7.2:
     resolution: {integrity: sha512-zIURGIS1E1Q4pcrMjp+nnEh+16G56eG/MUllJH8yEvw7asDo7Ac9uhC9KIH5jzpITueEZolfYglnCGIuSBz39g==}
     engines: {node: '>=4'}
+    dev: false
+
+  /axios@1.4.0:
+    resolution: {integrity: sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==}
+    dependencies:
+      follow-redirects: 1.15.2
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   /axobject-query@3.2.1:
@@ -1515,9 +2902,20 @@ packages:
       color-string: 1.9.1
     dev: false
 
+  /combined-stream@1.0.8:
+    resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
+    engines: {node: '>= 0.8'}
+    dependencies:
+      delayed-stream: 1.0.0
+    dev: false
+
   /commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
     engines: {node: '>= 6'}
+    dev: false
+
+  /compute-scroll-into-view@3.0.3:
+    resolution: {integrity: sha512-nadqwNxghAGTamwIqQSG433W6OADZx2vCo3UXHNrzTRHK/htu+7+L0zhjEoaeaQVNAi3YgqWDv8+tzf0hRfR+A==}
     dev: false
 
   /concat-map@0.0.1:
@@ -1579,6 +2977,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /deepmerge@4.3.1:
+    resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   /default-browser-id@3.0.0:
     resolution: {integrity: sha512-OZ1y3y0SqSICtE8DE4S8YOE9UZOJ8wO16fKWVP5J1Qz42kV9jcnMVFrEE/noXb/ss3Q4pZIH79kxofzyNNtUNA==}
     engines: {node: '>=12'}
@@ -1608,6 +3011,11 @@ packages:
     dependencies:
       has-property-descriptors: 1.0.0
       object-keys: 1.1.1
+    dev: false
+
+  /delayed-stream@1.0.0:
+    resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
+    engines: {node: '>=0.4.0'}
     dev: false
 
   /dequal@2.0.3:
@@ -2111,10 +3519,29 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: false
 
+  /follow-redirects@1.15.2:
+    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
+
   /for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
     dependencies:
       is-callable: 1.2.7
+    dev: false
+
+  /form-data@4.0.0:
+    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
+    engines: {node: '>= 6'}
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
     dev: false
 
   /fraction.js@4.2.0:
@@ -2664,6 +4091,14 @@ packages:
     resolution: {integrity: sha512-oKMuF3xEeqDltrGMfDxAPGIVMSSRv8tbRSODbrs4KGsRRLEhrW8N8Rd4DRgB2+621hY8A8XwwrTVhXWpxFvMzg==}
     dev: false
 
+  /lodash.kebabcase@4.1.1:
+    resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
+    dev: false
+
+  /lodash.mapkeys@4.6.0:
+    resolution: {integrity: sha512-0Al+hxpYvONWtg+ZqHpa/GaVzxuN3V7Xeo2p+bY06EaK/n+Y9R7nBePPN2o1LxmL0TWQSwP8LYZ008/hc9JzhA==}
+    dev: false
+
   /lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: false
@@ -2701,6 +4136,18 @@ packages:
     dependencies:
       braces: 3.0.2
       picomatch: 2.3.1
+    dev: false
+
+  /mime-db@1.52.0:
+    resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==}
+    engines: {node: '>= 0.6'}
+    dev: false
+
+  /mime-types@2.1.35:
+    resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
+    engines: {node: '>= 0.6'}
+    dependencies:
+      mime-db: 1.52.0
     dev: false
 
   /mimic-fn@2.1.0:
@@ -3098,6 +4545,10 @@ packages:
       react-is: 16.13.1
     dev: false
 
+  /proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+    dev: false
+
   /punycode@2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
     engines: {node: '>=6'}
@@ -3284,6 +4735,12 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
+
+  /scroll-into-view-if-needed@3.0.10:
+    resolution: {integrity: sha512-t44QCeDKAPf1mtQH3fYpWz8IM/DyvHLjs8wUvvwMYxk5moOqCzrMSxK6HQVD0QVmVjXFavoFIPRVrMuJPKAvtg==}
+    dependencies:
+      compute-scroll-into-view: 3.0.3
     dev: false
 
   /semver@6.3.1:
