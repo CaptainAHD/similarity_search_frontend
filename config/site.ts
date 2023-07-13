@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
 	name: "Similarity search",
-	description: "Make beautiful websites regardless of your design experience.",
+	description: "Law made more accessible.",
 	navItems: [
 		{
 			label: "Home",
