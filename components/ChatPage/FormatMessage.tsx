@@ -32,9 +32,9 @@ const Beautify:FC<BeautifyProps> = ({message,UserMessage}) => {
                 <div className="flex my-2 justify-center">
                     <Summary message={msg}/>
                 </div>
-                <div className="flex my-2 justify-center">
+                {/* <div className="flex my-2 justify-center">
                     <Button href={`https://indiankanoon.org/?formInput=${msg.Output.FileName}`} as={Link} isExternal color="secondary" variant="ghost" showAnchorIcon> Go to case</Button>
-                </div>
+                </div> */}
                 <Divider className="my-4" />
             </div>
         ))}
