@@ -33,7 +33,7 @@ const Beautify:FC<BeautifyProps> = ({message,UserMessage}) => {
                     <Summary message={msg}/>
                 </div>
                 <div className="flex my-2 justify-center">
-                    <Button href={`https://indiankanoon.org/?formInput=${msg.Output.FileName}+doctypes:judgments`} as={Link} isExternal color="secondary" variant="ghost" showAnchorIcon> Go to case</Button>
+                    <Button href={`https://indiankanoon.org/?formInput=${msg.Output.FileName}`} as={Link} isExternal color="secondary" variant="ghost" showAnchorIcon> Go to case</Button>
                 </div>
                 <Divider className="my-4" />
             </div>
