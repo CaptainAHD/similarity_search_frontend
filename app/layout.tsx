@@ -1,11 +1,10 @@
-import "@/styles/globals.css";
-import { Metadata } from "next";
-import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
-import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
-import { Link } from "@nextui-org/link";
+import { fontSans } from "@/config/fonts";
+import { siteConfig } from "@/config/site";
+import "@/styles/globals.css";
 import clsx from "clsx";
+import { Metadata } from "next";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
 	title: {
@@ -38,7 +37,7 @@ export default function RootLayout({
 					fontSans.variable
 				)}
 			>
-				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+				<Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
 					<div className="min-h-screen flex flex-col">
 						<Navbar />
 						<div className="pt-16 min-h-screen">

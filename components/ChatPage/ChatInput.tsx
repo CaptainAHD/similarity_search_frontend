@@ -22,7 +22,7 @@ const ChatInput: React.FC<ChatInputProps> = ({onSendMessage, MessageLength, Load
 
     const FetchResponse = async (query: string) : Promise<BotResponse[]> => {
         try {
-            const response = await axios.post('https://legal-similarity-search.onrender.com//run', { message: query }, { headers: { 'Content-Type': 'application/json' } });
+            const response = await axios.post('http://localhost:80/run', { message: query }, { headers: { 'Content-Type': 'application/json' } });
             return response.data ;
         } catch (error) {
             console.log(error);

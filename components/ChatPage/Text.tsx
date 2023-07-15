@@ -28,7 +28,13 @@ const TextMessage:FC<ChatMessageProps> = ({ Messages }) => {
                                     <div className="flex-shrink-0 flex flex-col relative items-end">
                                         <Avatar radius="md" name="Bot" src={botImage} />
                                     </div>
-                                    {typeof message.message === 'number' ? <> <Progress style={{width: '200px'}}  className="w-8" size="sm" isIndeterminate color="secondary"/> </> : <Beautify message={message.message}/>}
+                                    <div className="flex flex-col">
+                                        {typeof message.message === 'number' ? (
+                                            <Progress style={{ width: '200px' }} className="w-8" size="sm" isIndeterminate color="secondary" />
+                                        ) : (
+                                            typeof message.message !== 'string' && <Beautify message={message.message} UserMessage={Messages[index-1].message}/>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         ) : (
