@@ -1,5 +1,5 @@
 'use client'
-import { MessageGroup } from "@/types";
+import { BotResponse, MessageGroup } from "@/types";
 import { useState } from "react";
 import ChatInput from "./ChatInput";
 import TextMessage from "./Text";
